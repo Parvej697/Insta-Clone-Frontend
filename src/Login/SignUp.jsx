@@ -20,11 +20,10 @@ const SignUp = () => {
         password,
       });
 
-      // If successful, backend returns saved user
+   
       alert("Signup successful!");
-      navigate("/login"); // go to login page
+      navigate("/login"); 
     } catch (err) {
-      // Show backend error
       setError(err.response?.data || "Signup failed");
     }
   };

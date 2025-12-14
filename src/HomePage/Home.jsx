@@ -23,7 +23,7 @@ const Home = () => {
             <div key={post.id} className="mb-6">
               <div className="flex items-center p-3">
                 <img
-                  src={`https://via.placeholder.com/40`} // replace with user image if available
+                  src={`https://via.placeholder.com/40`} 
                   className="w-10 h-10 rounded-full mr-3"
                 />
                 <span className="font-semibold">{post.userId}</span>

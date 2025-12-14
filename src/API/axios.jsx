@@ -7,7 +7,7 @@ const API = axios.create({
   },
 });
 
-// JWT token automatically attach hoga
+
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
 

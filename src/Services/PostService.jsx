@@ -6,7 +6,7 @@ export const fetchPosts = async () => {
   try {
     const response = await axios.get(API_URL, {
       headers: { "Content-Type": "application/json" },
-      withCredentials: true, // only if backend requires cookies/auth
+      withCredentials: true,
     });
     return response.data;
   } catch (error) {

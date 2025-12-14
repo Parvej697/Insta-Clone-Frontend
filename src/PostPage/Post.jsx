@@ -20,7 +20,7 @@ const Post = () => {
     e.preventDefault();
     if (!image) return alert("Please select an image!");
     const newPost = {
-      userId: "currentUserId", // Replace with logged in user id
+      userId: "currentUserId", 
       imageUrl: image,
       caption,
     };

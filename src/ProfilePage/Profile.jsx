@@ -4,7 +4,7 @@ import { PostContext } from "../Context/PostContext";
 const Profile = () => {
   const { posts } = useContext(PostContext);
 
-  // Mock user data; replace with API call later
+  
   const [user, setUser] = useState({
     username: "current_user",
     bio: "This is my Instagram bio",
@@ -13,13 +13,12 @@ const Profile = () => {
     following: 180,
   });
 
-  // Filter posts of current user
+  
   const userPosts = posts.filter((post) => post.userId === user.username);
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100">
       <div className="w-full max-w-3xl p-4">
-        {/* Profile Header */}
         <div className="flex items-center mb-6">
           <img
             src={user.profileImage}
@@ -37,7 +36,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex space-x-4 mb-4">
           <button className="flex-1 bg-blue-500 text-white py-2 rounded font-semibold">
             Edit Profile
@@ -47,7 +45,6 @@ const Profile = () => {
           </button>
         </div>
 
-        {/* User Posts Grid */}
         <h3 className="font-semibold mb-2">Posts</h3>
         {userPosts.length === 0 ? (
           <p className="text-gray-500 text-center">No posts yet</p>

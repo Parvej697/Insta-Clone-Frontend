@@ -18,8 +18,8 @@ const Login = () => {
         password,
       });
 
-      const token = res.data; // JWT token returned by backend
-      localStorage.setItem("token", token); // store token
+      const token = res.data; 
+      localStorage.setItem("token", token); 
       alert("Login successful!");
       navigate("/home");
     } catch (err) {
